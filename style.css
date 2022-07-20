@@ -1,0 +1,162 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Common style  */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 26px;
+    border-radius: 5px;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+hr {
+    border:1px solid #D1D1D1;
+}
+
+/* Top players style */
+.top-players{
+    margin-bottom: 30px;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 29px;
+}
+.top-player{
+    display: flex;
+    align-items: center;
+}
+.top-player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin: 16px;
+    font-size: 18px;
+}
+
+/* top blog styles */
+
+.top-blogs{
+    padding-top: 18px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 29px;
+}
+.top-blog{
+    display: flex;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.side-blog{
+    margin-left: 16px;
+}
+.side-heading{
+    font-size: 20px;
+}
+.side-text{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.side-text a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+
+/* Lates course styles  */
+
+.lates-courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 24px;
+}
+.lates-course{
+    padding: 25px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px lightgray;
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-title{
+    font-size: 17px;
+}
+.second-title{
+    font-size: 18px;
+}
+.course-aouthor{
+    color: red;
+}
+.fa-star.filled{
+    color: gold;
+    font-size: 12px;
+}
+.fa-star.empty{
+    color: lightgray;
+    font-size: 12px;
+}
+.clock{
+    background-color: lightsalmon;
+    border-radius: 20px;
+    color: red;
+    padding: 4px;
+}
+
+/*--------------- media quarey 
+---------------------------------------------- */
+
+/* For phone  */
+
+@media screen and (max-width: 688px) {
+    .container,.top-players,.blogs,.lates-courses{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* For tablet  */
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .container,.blogs,.lates-courses{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container,.top-players{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+}
